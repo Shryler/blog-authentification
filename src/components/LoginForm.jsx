@@ -11,10 +11,10 @@ function LoginForm() {
     }
 
     return (
-        <form id="form1" onSubmit={handleFormSignInSubmit}  className="form-example w-50 text-center">
+        <form id="form1" onSubmit={handleFormSignInSubmit}>
             <div className="form-example d-flex flex-column w-50">
-                <label htmlFor="email">Adresse email </label>
-                <input type="email" name="email" id="email" required />
+                <label htmlFor="login">Adresse email </label>
+                <input type="text" name="login" id="login" required />
             </div>
             <div className="form-example d-flex flex-column w-50">
                 <label htmlFor="password">Mot de passe </label>

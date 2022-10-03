@@ -3,11 +3,14 @@ import { Outlet } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 
 const BaseScreen = () => {
-    return (
-        <div>
-            <NavBar />
-            <Outlet />
+    return (<>
+        <NavBar />
+        <div className="container">
+            <main>
+                <Outlet />
+            </main>
         </div>
+    </>
     );
 };
 
