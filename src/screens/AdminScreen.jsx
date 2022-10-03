@@ -1,9 +1,9 @@
 import React from 'react';
 
-function AdminScreen(props) {
+function AdminScreen() {
     return (
         <div>
-            
+            <h1>Admin</h1>
         </div>
     );
 }
