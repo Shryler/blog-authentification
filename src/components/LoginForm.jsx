@@ -5,8 +5,9 @@ function LoginForm() {
     const handleFormSignInSubmit = (e) => {
         e.preventDefault();
         const jsonDataSignIn = Object.fromEntries(new FormData(e.target));
-        alert("Vous êtes enregistré !")
+        alert("Vous êtes enregistré !");
         console.log(jsonDataSignIn);
+        document.getElementById("form1").reset(); // Permet de réinitialiser les input
     }
 
     return (
